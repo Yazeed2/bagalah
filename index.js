@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 let PORT = process.env.PORT || 5000
 const path = require("path");
 require('dotenv/config')
-
+console.log('sup')
 // connect to mongoose
 mongoose.set('useNewUrlParser',true);
 mongoose.set('useCreateIndex',true);
@@ -13,7 +13,7 @@ mongoose.connect(process.env.DB, {useNewUrlParser : true , useUnifiedTopology: t
 .then(()=> console.log('Mongodb is running'),(err)=> console.log(err) )
 
 app.use(cors())
-//yazeedisthebest123
+
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
