@@ -18,9 +18,9 @@ app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
 app.use('/server', require('./route'))
-app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname, "build", "index.html"));
-  });
+// app.get("/*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "build", "index.html"));
+//   });
 
 
 
